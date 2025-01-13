@@ -1,0 +1,73 @@
+# tracailer
+
+[Paper](https://arxiv.org/pdf/2501.xxxxx) | [Video](https://www.youtube.com/watch?v=xxxxxxxxx)
+
+This repository is for the paper, "Tracailer: An Efficient Trajectory Planner for \\ Tractor-Trailer Robots in Unstructured Environments".
+
+## Quick Start
+
+### Step One:
+
+Install the requirements.
+
+**ros dependence**: (use ros noetic with Ubuntu20.04 as an example)
+
+```
+sudo apt install ros-noetic-tf2-geometry-msgs
+sudo apt install ros-noetic-ackermann-msgs
+```
+
+**casadi for mpc controller:**
+
+Go to the [website of casadi](https://github.com/casadi/casadi) and install casadi. For example, you can:
+
+```
+git clone https://github.com/casadi/casadi.git
+cd casadi
+```
+
+Open the `CMakeLists.txt` and set the `WITH_LAPACK_DEF` and `WITH_QPOASES_DEF` from `OFF` to `ON`, then
+
+```
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+```
+
+**NOTE:** We may have forgotten other dependencies 😟, sorry!
+
+### Step Two:
+
+Build the project: (you can change the trailer num defined in `src/planner/CMakeLists.txt` by change the definition of `TRAILER_NUM`)
+
+```
+git clone https://github.com/ZJU-FAST-Lab/tracailer.git
+cd tracailer
+catkin_make
+```
+
+### Step Three:
+
+run the project:
+
+```
+roslaunch planner run_all.launch
+```
+
+When you see the robot in the Rviz like below, you can use `2D Pose Estimate` to trigger planning.
+
+<iframe width="560" height="315" src="./assets/teach.mp4" frameborder="0" allowfullscreen></iframe>
+
+## Citing
+
+If our method is useful for your research, please consider citing.
+
+```
+@article{xxxxxx,
+  title={Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Robots in Unstructured Environments},
+  author={xxxxx},
+  journal={arXiv preprint arXiv:2501.xxxxx},
+  year={2025}
+}
+```
