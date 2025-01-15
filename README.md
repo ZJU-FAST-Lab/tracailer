@@ -52,6 +52,7 @@ catkin_make
 run the project:
 
 ```
+source devel/setup.bash
 roslaunch planner run_all.launch
 ```
 
