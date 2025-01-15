@@ -8,13 +8,14 @@ This repository is for the paper, "Tracailer: An Efficient Trajectory Planner fo
 
 ### Step One:
 
-Install the requirements.
+Install the [ros](https://wiki.ros.org/noetic/Installation/Ubuntu) and the requirements below.
 
 **ros dependence**: (use ros noetic with Ubuntu20.04 as an example)
 
 ```
 sudo apt install ros-noetic-tf2-geometry-msgs
 sudo apt install ros-noetic-ackermann-msgs
+sudo apt install libompl-dev
 ```
 
 **casadi for mpc controller:**
