@@ -40,7 +40,7 @@ sudo make install
 
 ### Step Two:
 
-Build the project: (you can change the trailer num defined in `src/planner/CMakeLists.txt` by change the definition of `TRAILER_NUM`)
+Build the project: (you can change the trailer num defined in `src/planner/CMakeLists.txt` by changing the definition of `TRAILER_NUM`)
 
 ```
 git clone https://github.com/ZJU-FAST-Lab/tracailer.git
