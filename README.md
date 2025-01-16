@@ -27,7 +27,7 @@ git clone https://github.com/casadi/casadi.git
 cd casadi
 ```
 
-Open the `CMakeLists.txt` and set the `WITH_LAPACK_DEF` and `WITH_QPOASES_DEF` from `OFF` to `ON`, then
+📢**Important!**: Open the `CMakeLists.txt` and set the `WITH_LAPACK_DEF` and `WITH_QPOASES_DEF` from `OFF` to `ON`, then
 
 ```
 mkdir build && cd build
