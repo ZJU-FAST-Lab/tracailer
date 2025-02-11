@@ -8,13 +8,14 @@ This repository is for the paper, "Tracailer: An Efficient Trajectory Planner fo
 
 ### Step One:
 
-Install the requirements.
+Install the [ros](https://wiki.ros.org/ROS/Installation) and the requirements below.
 
 **ros dependence**: (use ros noetic with Ubuntu20.04 as an example)
 
 ```
 sudo apt install ros-noetic-tf2-geometry-msgs
 sudo apt install ros-noetic-ackermann-msgs
+sudo apt install libompl-dev
 ```
 
 **casadi for mpc controller:**
@@ -26,7 +27,7 @@ git clone https://github.com/casadi/casadi.git
 cd casadi
 ```
 
-Open the `CMakeLists.txt` and set the `WITH_LAPACK_DEF` and `WITH_QPOASES_DEF` from `OFF` to `ON`, then
+📢**Important!**: Open the `CMakeLists.txt` and set the `WITH_LAPACK_DEF` and `WITH_QPOASES_DEF` from `OFF` to `ON`, then
 
 ```
 mkdir build && cd build
@@ -39,7 +40,7 @@ sudo make install
 
 ### Step Two:
 
-Build the project: (you can change the trailer num defined in `src/planner/CMakeLists.txt` by change the definition of `TRAILER_NUM`)
+Build the project: (you can change the trailer num defined in `src/planner/CMakeLists.txt` by changing the definition of `TRAILER_NUM`)
 
 ```
 git clone https://github.com/ZJU-FAST-Lab/tracailer.git
@@ -52,6 +53,7 @@ catkin_make
 run the project:
 
 ```
+source devel/setup.bash
 roslaunch planner run_all.launch
 ```
 
