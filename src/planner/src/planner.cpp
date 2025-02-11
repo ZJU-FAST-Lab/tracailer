@@ -47,7 +47,10 @@ namespace trailer_planner
 
     void Planner::rcvWpsCallBack(const geometry_msgs::PoseWithCovarianceStamped msg)
     {
-        static size_t cnt = 0;        
+        static size_t cnt = 0;     
+
+        if (cnt > 0)
+            return; 
 
         Eigen::VectorXd far;
         far.resize(TRAILER_NUM+3);
@@ -70,7 +73,7 @@ namespace trailer_planner
         start_pos = odom_pos;
         if (cnt == 0)
         {
-            // test nsdf
+            cnt ++;
             end_pos = wps;
             trailer->setShowTerminal(wps);
             PRINT_YELLOW("[Planner] Get target pose, begin planning.");
