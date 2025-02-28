@@ -2,7 +2,7 @@
 
 [Paper](https://arxiv.org/pdf/2501.xxxxx) | [Video](https://www.youtube.com/watch?v=xxxxxxxxx)
 
-This repository is for the paper, "Tracailer: An Efficient Trajectory Planner for \\ Tractor-Trailer Robots in Unstructured Environments".
+This repository is for the paper, "Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Vehicles in Unstructured Environments".
 
 ## Quick Start
 
