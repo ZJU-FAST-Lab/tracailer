@@ -1,6 +1,6 @@
 # tracailer
 
-[Paper](https://arxiv.org/pdf/2501.xxxxx) | [Video](https://www.youtube.com/watch?v=xxxxxxxxx)
+[Paper](https://arxiv.org/pdf/2502.19832) | [Video](https://www.youtube.com/watch?v=xxxxxxxxx)
 
 This repository is for the paper, "Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Vehicles in Unstructured Environments".
 
@@ -67,10 +67,12 @@ https://github.com/user-attachments/assets/bf2bb8f0-ab63-451f-96da-7b097f58948a
 If our method is useful for your research, please consider citing.
 
 ```
-@article{xxxxxx,
+@misc{tracailer,
   title={Tracailer: An Efficient Trajectory Planner for Tractor-Trailer Robots in Unstructured Environments},
-  author={xxxxx},
-  journal={arXiv preprint arXiv:2501.xxxxx},
-  year={2025}
+  author={Long Xu, Kaixin Chai, Boyuan An, Jiaxiang Gan, Qianhao Wang, Yuan Zhou, Xiaoying Li, Junxiao Lin, Zhichao Han, Chao Xu, Yanjun Cao, Fei Gao},
+  year={2025},
+  eprint={2502.19832},
+  archivePrefix={arXiv},
+  primaryClass={cs.RO}
 }
 ```
